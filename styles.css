@@ -259,6 +259,7 @@ main .hero-image {
 }
 
 @media (max-width: 62.5em) {
+
   main {
     flex-direction: column-reverse;
     align-items: center;
@@ -343,7 +344,7 @@ main .hero-image {
 
   @keyframes slide {
     0% {
-      right: 15.625em;
+      right: -500px;
     }
 
     100% {
@@ -388,5 +389,11 @@ main .hero-image {
     backdrop-filter: blur(0.1875em);
     z-index: 9999;
     display: none;
+  }
+}
+
+@media (max-width: 34.375em) {
+  .main-text-content-container {
+    margin-inline: 3.125em;
   }
 }
