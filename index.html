@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/e56568625c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <img class="logo" src="images/logo.svg" alt="site logo" />
+          <li class="features">
+            Features<i class="fa-solid fa-chevron-down"></i>
+            <ul class="features-dropdown">
+              <li>
+                <img src="images/icon-todo.svg" alt="todo icon" />Todo List
+              </li>
+              <li>
+                <img
+                  src="images/icon-calendar.svg"
+                  alt="calendar icon"
+                />Calenders
+              </li>
+              <li>
+                <img
+                  src="images/icon-reminders.svg"
+                  alt="reminders icon"
+                />Reminders
+              </li>
+              <li>
+                <img
+                  src="images/icon-planning.svg"
+                  alt="planning icon"
+                />Planning
+              </li>
+            </ul>
+          </li>
+          <li class="company">
+            Company<i class="fa-solid fa-chevron-down"></i>
+            <ul class="company-dropdown">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+        <div class="login-register-container">
+          <span class="login">Login</span>
+          <span class="register">Register</span>
+        </div>
+        <img
+          class="mobile-menu-icon"
+          src="images/icon-menu.svg"
+          alt="mobile menu icon"
+        />
+        <div class="mobile-menu">
+          <img
+            class="close-menu-icon"
+            src="images/icon-close-menu.svg"
+            alt="close mobile menu icon"
+          />
+          <ul class="mobile-nav-links">
+            <li class="features-mobile">
+              Features<i class="fa-solid fa-chevron-down arrow1"></i>
+              <ul class="features-mobile-dropdown">
+                <li>
+                  <img src="images/icon-todo.svg" alt="todo icon" />Todo List
+                </li>
+                <li>
+                  <img
+                    src="images/icon-calendar.svg"
+                    alt="calendar icon"
+                  />Calenders
+                </li>
+                <li>
+                  <img
+                    src="images/icon-reminders.svg"
+                    alt="reminders icon"
+                  />Reminders
+                </li>
+                <li>
+                  <img
+                    src="images/icon-planning.svg"
+                    alt="planning icon"
+                  />Planning
+                </li>
+              </ul>
+            </li>
+            <li class="company-mobile">
+              Company<i class="fa-solid fa-chevron-down arrow2"></i>
+              <ul class="company-mobile-dropdown">
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </li>
+            <li>Careers</li>
+            <li>About</li>
+          </ul>
+          <div class="login-register-mobile-container">
+            <span class="login">Login</span>
+            <span class="register">Register</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="main-text-content-container">
+        <span>Make&nbsp</span>
+        <span>remote&nbsp</span>
+        <span>work</span>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button>Learn more</button>
+        <div class="main-content-icons-container">
+          <img src="images/client-databiz.svg" alt="databiz logo" />
+          <img src="images/client-audiophile.svg" alt="audiophile logo" />
+          <img src="images/client-meet.svg" alt="client-meet logo" />
+          <img src="images/client-maker.svg" alt="client-maker logo" />
+        </div>
+      </div>
+      <picture>
+        <source
+          media="(max-width: 1000px)"
+          srcset="images/image-hero-mobile.png"
+        />
+        <img
+          src="images/image-hero-desktop.png"
+          class="hero-image right"
+          alt="desktop hero image"
+        />
+      </picture>
+    </main>
+    <div class="overlay"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
